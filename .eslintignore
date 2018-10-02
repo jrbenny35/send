@@ -3,3 +3,4 @@ assets
 firefox
 coverage
 test/integration
+test/wdio.*
