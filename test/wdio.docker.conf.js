@@ -8,7 +8,7 @@ Config for running selenium in a new docker container against localhost
 /*/
 
 exports.config = Object.assign({}, common.config, {
-  baseUrl: `http://${ip.address()}:8081`,
+  baseUrl: `http://${ip.address()}:8000`,
   maxInstances: 1,
   services: ['docker', require('./testServer')],
   dockerOptions: {
