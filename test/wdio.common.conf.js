@@ -29,7 +29,7 @@ exports.config = {
   deprecationWarnings: true,
   bail: 0,
   screenshotOnReject: false,
-  baseUrl: 'http://localhost:8000',
+  baseUrl: 'http://localhost:8081',
   waitforTimeout: 20000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
@@ -40,6 +40,6 @@ exports.config = {
     ui: 'bdd',
     timeout: 30000,
     compilers: ['js:babel-register'],
-    retrues: 1
+    retries: 1
   }
 };
