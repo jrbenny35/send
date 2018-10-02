@@ -146,8 +146,6 @@
     "node-fetch": "^2.2.0",
     "raven": "^2.6.4",
     "redis": "^2.8.0",
-    "wdio-webpack-dev-server-service": "^2.0.2",
-    "wdio-webpack-service": "^1.0.1",
     "websocket-stream": "^5.1.2"
   },
   "availableLanguages": [
