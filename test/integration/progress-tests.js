@@ -2,7 +2,6 @@ import ProgressPage from './pages/desktop/progress_page';
 import HomePage from './pages/desktop/home_page';
 
 const assert = require('assert');
-const chai = require('chai');
 
 describe('Firefox Send progress page', () => {
   const baseUrl = browser.options['baseUrl'];
@@ -20,6 +19,6 @@ describe('Firefox Send progress page', () => {
     browser.chooseFile('#file-upload', __filename);
     browser.click(homePage.readyToSend);
     let progressPage = new ProgressPage();
-    chai.expect(progressPage.waitForPageToLoad()).to.be.ok;
+    assert.ok(progressPage.waitForPageToLoad());
   });
 });

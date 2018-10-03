@@ -1,9 +1,6 @@
 import HomePage from './pages/desktop/home_page';
 
 const assert = require('assert');
-const chai = require('chai');
-let chaiWebdriver = require('chai-webdriverio').default;
-//chai.use(chaiWebdriver(browser));
 
 describe('Firefox Send homepage', () => {
   const baseUrl = browser.options['baseUrl'];
@@ -38,7 +35,7 @@ describe('Firefox Send homepage', () => {
         let url = browser.getUrl();
         return url !== baseUrl;
       });
-      chai.expect(browser.getUrl()).to.include(link);
+      assert.ok(browser.getUrl().includes(link));
     });
   });
 
@@ -53,7 +50,7 @@ describe('Firefox Send homepage', () => {
         let url = browser.getUrl();
         return url !== baseUrl;
       });
-      chai.expect(browser.getUrl()).to.include(link);
+      assert.ok(browser.getUrl().includes(link));
     });
   });
 });

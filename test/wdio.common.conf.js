@@ -29,7 +29,7 @@ exports.config = {
   deprecationWarnings: true,
   bail: 0,
   screenshotOnReject: false,
-  baseUrl: 'http://localhost:8081',
+  baseUrl: 'http://localhost:8080',
   waitforTimeout: 20000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,

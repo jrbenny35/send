@@ -2,7 +2,7 @@ import DownloadPage from './pages/desktop/download_page';
 import HomePage from './pages/desktop/home_page';
 import SharePage from './pages/desktop/share_page';
 
-const chai = require('chai');
+const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
 
@@ -45,7 +45,7 @@ describe('Firefox Send', () => {
           browser.getText(downloadPage.downloadComplete) === 'DOWNLOAD COMPLETE'
         );
       });
-      chai.assert.isTrue(fs.existsSync(`${downloadDir}/${file}`));
+      assert.ok(fs.existsSync(`${downloadDir}/${file}`));
     });
   });
 });
